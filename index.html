@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gerenciador teste</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador Teste</h1>
+
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="taskName">Tarefa:</label>
+                <input type="text" id="taskName" required> 
+            </div>
+
+            <div class="form-group">
+                <label for="responsible">Responsável:</label>
+                <input type="text" id="responsible" required>
+            </div>
+
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status" required>
+                    <option value="pendente">Pendente</option>
+                    <option value="em-andamento">Em andamento</option>
+                    <option value="concluida">Concluido</option>
+                </select>
+            </div>
+
+            <button type="submit">Adicionar tarefa</button>
+
+        </form>
+        <div class="task-list" id="taskList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
